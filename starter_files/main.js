@@ -34,9 +34,8 @@ function maxOfThree(num1, num2, num3){
 function isVowel(char){
     // Your answer here
     let vowels = ['a','e','i','o','u','y']
-    let counter = vowels.length
-    while(counter--) {
-      if(char == vowels[counter]) {
+    for(i = 0; i < vowels.length; i++){
+      if(char == vowels[i]) {
         return true;
       }
     }
