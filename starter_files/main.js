@@ -60,6 +60,19 @@ function avg(num1, num2, num3) {
 }
 console.log(avg(10,5,5))
 
+//Wanted to make an average function that took any number of 'numbers' as well as ignored things that were not 'numbers'
+function avg1() {
+  let numTotals = 0;
+  let sum = 0;
+  for(i = 0; i < arguments.length; i++){
+    if(parseInt(arguments[i])){
+    sum += arguments[i];
+    numTotals++
+  }
+  }
+  return sum / numTotals;
+}
+console.log(avg1(1,2,3,4,"eat"))
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
